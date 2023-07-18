@@ -1,3 +1,4 @@
+import { Navbar } from '@/components/nav-bar'
 import * as React from 'react'
 
 export default function RootLayout ({
@@ -6,8 +7,11 @@ export default function RootLayout ({
   children: React.ReactNode
 }) {
   return (
-    <div className=''>
-      {children}
+    <div>
+      <Navbar />
+      <div>
+        {children}
+      </div>
     </div>
   )
 }
